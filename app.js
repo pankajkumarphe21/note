@@ -21,7 +21,7 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 app.get('/', (req, res) => {
-    res.send('Hi')
+    res.render('index')
 });
 
 app.post('/signup',async (req,res)=>{
